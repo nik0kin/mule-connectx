@@ -1,0 +1,49 @@
+{
+  "name" : "ConnectX",
+  "turnSubmitStyle" : "roundRobin",
+
+  "staticBoardSettings" : {
+    "boardStyle" : "squareGrid"
+  },
+
+  "gameSettings" : {
+    "playerLimit" : 2,
+    "customBoardSettings" : {
+      "connectAmount": {
+        "min": 3,
+        "max": 13
+      },
+      "width": {
+        "min": 3,
+        "max": 13
+      },
+      "height": {
+        "min": 3,
+        "max": 13
+      }
+    }
+  },
+
+  "rules": {
+    "spaces": [
+      {
+        "className": "SpaceSpace",
+        "spots": 1,
+        "attributes": {
+          "open": false
+        }
+      }
+    ],
+
+    "pieces": [
+      {
+        "className": "tokens"
+      }
+    ],
+
+    "dynamicBoard": true,
+    "board": [],
+
+    "startingPieces": {}
+  }
+}
