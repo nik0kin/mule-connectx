@@ -1,0 +1,15 @@
+{
+  "name": "mule-connectx",
+  "version": "1.0.0",
+  "description": "connect4 implementation for mule",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@nikpoklitar",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "q": "^1.1.2"
+  }
+}
