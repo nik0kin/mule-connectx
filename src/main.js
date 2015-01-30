@@ -1,7 +1,7 @@
 
 define(['connectX', 'mule-sdk'],
     function (connectX, sdk) {
-  var muleUrl = 'http://localhost:313/webservices/';
+  var muleUrl = '../../';
   
   var SDK = sdk(muleUrl),
     Spinal = SDK.Spinal();
