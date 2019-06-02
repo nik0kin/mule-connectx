@@ -1,5 +1,4 @@
-var _ = require('lodash'),
-  Q = require('q');
+var _ = require('lodash');
 
 var validateQ = function (M, actionOwnerRel, actionParams) {
   var xDropLocation = actionParams.xDropLocation,
@@ -40,9 +39,9 @@ var doQ = function (M, actionOwnerRel, actionParams) {
 
   return M.persistQ()
     .then(function () {
-      return Q({
+      return {
         droppedToLocation: xDropLocation + ',' + dropY
-      })
+      };
     });
 };
 

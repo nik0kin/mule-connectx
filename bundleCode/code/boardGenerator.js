@@ -1,11 +1,10 @@
-var _ = require('lodash'),
-  Q = require('q');
+var _ = require('lodash');
 
 var boardGeneratorHook = function (customBoardSettings) {
   var board = [];
 
-  _(customBoardSettings.width).times(function (x) {
-    _(customBoardSettings.height).times(function (y) {
+  _.times(customBoardSettings.width, function (x) {
+    _.times(customBoardSettings.height, function (y) {
       var newSpace = {
         id: getSpaceId(x,y),
         class: 'SpaceSpace',
@@ -14,12 +13,12 @@ var boardGeneratorHook = function (customBoardSettings) {
         },
         edges: {} //idc
       };
-  
+
       board.push(newSpace);
     });
   });
 
-  return Q(board);
+  return Promise.resolve(board);
 };
 
 module.exports = boardGeneratorHook;

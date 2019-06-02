@@ -49,9 +49,9 @@ var winConditionHook = function (M) {
 
 var getBoardArray = function (customBoardSettings, pieces) {
   var board = [];
-  _(customBoardSettings.width).times(function () {
+  _.times(customBoardSettings.width, function () {
     var row = [];
-    _(customBoardSettings.height).times(function () {
+    _.times(customBoardSettings.height, function () {
       row.push({});
     });
     board.push(row);
